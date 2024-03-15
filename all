@@ -17,3 +17,135 @@ else:
     print('Неверно')
 
 3)
+n1= input()
+if n1.lower() == "джеймс бонд":
+    print('Верно')
+else:
+    print('Неверно')
+
+4)
+print('Вы поедете на бал?')
+n1 = input()
+if not n1.lower() == "да":
+    print('Неверно')
+else:
+    print('Верно')
+
+5)
+n1= int(input())
+n2 = int(input())
+
+if n1 < n2:
+    print(n1)
+else:
+    print(n2)
+
+6)
+score = input()
+
+g1, g2 = map(int, score.split(':'))
+
+if g1 > g2:
+    print('1')
+elif g2 > g1:
+    print('2')
+else:
+    print('0')
+
+7)
+scores = input()
+
+ps = list(map(int, scores.split()))
+
+best = ps[0]
+
+for i in ps:
+    if i > best:
+        best = i
+
+print(best)
+
+//
+
+if p1 > best:
+    best = p1
+if p2 > best:
+    best = p2
+if p3 > best:
+    best = p3
+
+
+8)
+print("Здравствуйте! Как Вас зовут?")
+name = input()
+
+print("Очень приятно, " + name + "! Меня зовут Марк.")
+
+print("Сколько Вам лет?")
+age = int(input())
+
+if age <= 78:
+    print("Да, " + name + ", я старше Вас на " + str(78 - age) + " лет.")
+else:
+    print("Да, " + name + ", Вы старше меня на " + str(age - 78) + " лет.")
+
+print("Вам нравится программировать?")
+pi = input()
+
+if pi.lower() == "да":
+    print("Превосходно! Уверен, у Вас получится написать множество полезных и хороших программ.")
+else:
+    print("Жаль. Я думал, Вы сможете написать интересную программу для меня.")
+
+9)
+p = input("Собака короткошерстной породы?")
+if p.lower() == "да":
+    p = input("Рост собаки менее 50 см?")
+    if p.lower() == "да":
+        p = input("У собаки короткий хвост?")
+        if p.lower() == "да":
+            print('Английский бульдог')
+        else:
+            p = input("У собаки длинные уши?")
+            if p.lower() == "да":
+                print('Гончая')
+            else:
+                p = input("У собаки короткое тело?")
+                if p.lower() == "да":
+                    print('Мопс')
+                else:
+                    print('Чихуахуа')
+    else:
+        p = input("Собака весит более 50 кг?")
+        if p.lower() == "да":
+            print('Датский дог')
+        else:
+            print('Фоксхаунд')
+else:
+    p = input("Рост собаки менее 50 см?")
+    if p.lower() == "да":
+        p = input("У собаки доброжелательный характер? ")
+        if p.lower() == "да":
+            print('Кокер - спаниэль')
+        else:
+            print('Ирландский сеттер')
+    else:
+        p = input("Рост собаки менее 70 см?")
+        if p.lower() == "да":
+            p = input("У собаки длинные уши?")
+            if p.lower() == "да":
+                print('Большой вандейский грифон')
+            else:
+                print('колли')
+        else:
+            p = input("Окрас ражий с большими отметинами?")
+            if p.lower() == "да":
+                print('Сенбернар')
+            else:
+                p = input("Белоснежный окрас")
+                if p.lower() == "да":
+                    print('Ирландский волкодав')
+                else:
+                    print('Ньюфаундленд')
+
+10)
